@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>testing</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="Mechanics.js"></script>
+</head>
+<body>
+	<div id="main_wrapper">
+		<div id="playerStats">
+			<p id="playerName">Player</p>
+			<p id="playerHealth"></p>
+			<p id="playerShield"></p>
+			<p id="playerEnergy"></p>
+			<p id="playerEvasion"></p>
+			<p id="playerArmor"></p>
+			<p id="playerPower"></p>
+			<p id="playerActionPoints"></p>
+
+
+		<button class="tooltip" onclick=implosion()><img src="./img/Exsanguinate.jpg" alt=""><br>Implosion
+		<span class="tooltiptext">Cost 3 AP & 30 Energy, Powerfull (Power + 40) attack that can't be dodged</span></button>
+
+		<button class="tooltip" onclick=mortalStrike()><img src="./img/WoundPoison.jpg" alt=""><br>Mortal Strike
+		<span class="tooltiptext">Cost 2 AP, Physical attack (Power + 20)</span></button>
+
+		<button class="tooltip" onclick=soulTap()><img src="./img/Immolate.jpg" alt=""><br>Soul Tap
+		<span class="tooltiptext">Cost 2 AP, Decrease health by 15, increase power by 20 + 1d10-5</span></button>
+
+		<button class="tooltip" onclick=heal()><img src="./img/Flashover.jpg" alt=""><br>Heal
+		<span class="tooltiptext">Cost 1 AP & 15 Energy, Heal for 50 Health</span></button>
+
+		<button class="tooltip" onclick=transcendency()><img src="./img/LingeringInsanity.jpg" alt=""><br>Transcendency
+		<span class="tooltiptext">Cost 5 AP, Regain all energy</span></button>
+
+		<button class="tooltip" onclick=shadowStep()><img src="./img/AuspiciousSpirits.jpg" alt=""><br>Shadow step
+		<span class="tooltiptext">Cost 1 AP, Remove armor, increase Evasion by 35 (max 70)</span></button>
+		
+		
+		</div>
+			<div id="console">	
+			<button onclick=turnEnd()>Turn End</button>	
+		</div>
+
+
+		<div id="enemyStats">
+			<p id="enemyName">Dumy</p>
+			<p id="enemyHealth"></p>
+			<p id="enemyShield"></p>
+			<p id="enemyEnergy"></p>
+			<p id="enemyEvasion"></p>
+			<p id="enemyArmor"></p>
+			<p id="enemyPower"></p>
+			<p id="enemyActionPoints"></p>
+
+		</div>
+</div>
+</body>
+<script>
+
+</script>
+</html>
+
